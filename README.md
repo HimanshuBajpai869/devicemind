@@ -186,7 +186,33 @@ No cloud dependency — runs entirely via USB + local machine.
 
 ## Connect device to your laptop
 
-- Enable Developer 
+##### Step 1: Enable Developer Options
+
+On your phone:
+
+- Go to Settings → About phone
+- Tap Build Number 7 times (or the equivalent on your manufacturer)
+- Enter your PIN if prompted
+- You should see "You are now a developer."
+
+##### Step 2: Enable USB Debugging
+
+Go to:
+
+~~~
+Settings
+    ↓
+Developer Options
+    ↓
+USB Debugging
+~~~
+
+Turn it ON.
+
+##### Step 3: USB Mode
+
+For most Android phones, File Transfer is the safest choice over USB
+
 ## Install dependencies
 
 ~~~
