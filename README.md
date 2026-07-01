@@ -139,19 +139,19 @@ A CLI-based conversational assistant that acts as the user interface.
 
 Maps user queries to MCP tools:
 
-Query	Tool
-battery	device_status
-storage	device_status
-device / health	device_status
+- Query	Tool
+- battery	device_status
+- storage	device_status
+- device / health	device_status
 
 #### 2. Query-aware Field Extraction
 
 Extracts only relevant fields:
 
-battery → battery section only
-storage → storage section only
-device → device metadata
-general → full snapshot
+- battery → battery section only
+- storage → storage section only
+- device → device metadata
+- general → full snapshot
 
 #### 3. Natural Language Formatting
 
@@ -249,9 +249,9 @@ Response:
 
 Split into:
 
-battery_status()
-storage_status()
-device_info()
+- battery_status()
+- storage_status()
+- device_info()
 
 
 ## Phase 3 — LLM-Based Agent Routing
@@ -259,11 +259,11 @@ device_info()
 Replace rule engine with LLM-based tool selection.
 
 ## Phase 4 — Memory Layer
-Battery trends
-Storage growth tracking
-Device history over time
+- Battery trends
+- Storage growth tracking
+- Device history over time
 
 ## Phase 5 — Proactive Assistant
-“Storage will fill in 10 days”
-“Battery degrading faster than usual”
-“Device overheating detected”
+- “Storage will fill in 10 days”
+- “Battery degrading faster than usual”
+- “Device overheating detected”
