@@ -1,4 +1,4 @@
-from adb_client import ADBClient
+from adb.adb_client import ADBClient
 
 adb = ADBClient()
 

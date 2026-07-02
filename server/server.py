@@ -1,5 +1,5 @@
 from mcp.server.fastmcp import FastMCP
-from collector import AndroidCollector
+from collector.collector import AndroidCollector
 
 collector = AndroidCollector()
 mcp = FastMCP("DeviceMind")

@@ -1,5 +1,6 @@
 import asyncio
-from assistant import DeviceAssistant, format_response
+from assistant import DeviceAssistant
+from helper import format_response
 
 
 class ChatDeviceAssistant:
