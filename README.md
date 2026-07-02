@@ -7,6 +7,7 @@
 - Android Debug Bridge (ADB)
 - Python-based device collectors
 - Model Context Protocol (MCP)
+- LLM using Ollama
 - A conversational assistant layer with tool routing and reasoning
 
 DeviceMind demonstrates a new paradigm:
@@ -219,6 +220,18 @@ For most Android phones, File Transfer is the safest choice over USB
 pip install -r requirements.txt
 ~~~
 
+## Start Ollama Server
+
+- Install Ollama based on your OS from the official documentation - https://ollama.com/
+- Start Ollama Server:
+~~~
+ollama serve
+~~~
+- Pull the LLM Model - The solution right now uses tinyllama, but you can change model as needed.
+~~~
+ollama pull tinyllama
+~~~
+
 ## Start Chat Assistant
 
 ~~~
@@ -279,17 +292,12 @@ Split into:
 - storage_status()
 - device_info()
 
-
-## Phase 3 — LLM-Based Agent Routing
-
-Replace rule engine with LLM-based tool selection.
-
-## Phase 4 — Memory Layer
+## Phase 3 — Memory Layer
 - Battery trends
 - Storage growth tracking
 - Device history over time
 
-## Phase 5 — Proactive Assistant
+## Phase 4 — Proactive Assistant
 - “Storage will fill in 10 days”
 - “Battery degrading faster than usual”
 - “Device overheating detected”
