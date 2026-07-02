@@ -73,7 +73,7 @@ Physical Android Device
 
 # 🧩 Components
 
-## 1. Android Collector (`collector.py`)
+## 1. Android Collector (`collector/collector.py`)
 
 Responsible for extracting structured telemetry from the Android device via ADB.
 
@@ -107,7 +107,7 @@ Responsible for extracting structured telemetry from the Android device via ADB.
 }
 ```
 
-## 2. MCP Server (server.py)
+## 2. MCP Server (server/server.py)
 
 Implements a Model Context Protocol (MCP) server using FastMCP.
 
@@ -118,7 +118,7 @@ device_status()
 
 Returns a full device snapshot from the collector.
 
-## 3. MCP Client Layer (assistant.py)
+## 3. MCP Client Layer (assistant/assistant.py)
 
 Acts as the bridge between the assistant and MCP server.
 
@@ -130,9 +130,16 @@ Acts as the bridge between the assistant and MCP server.
 - Parse JSON safely
 - Provide structured output to assistant layer
 
-## 4. Chat Assistant (chat_assistant.py)
+## 4. Chat Assistant (assistant/chat_assistant_v2.py)
 
 A CLI-based conversational assistant that acts as the user interface.
+
+## 5. Ollama based LLM Provider to Plan and Reason (llm/llm.py)
+
+Ollama based LLM Provider to -
+
+- Plan - To idenfity the tool which needs to be called.
+- Reason - To parse the response from LLM to a more user-friendly message.
 
 ### Responsibilities:
 
@@ -235,7 +242,7 @@ ollama pull tinyllama
 ## Start Chat Assistant
 
 ~~~
-python3 chat_assistant.py
+python3 -m assistant.chat_assistant_v2
 ~~~
 
 # Example Interactions
