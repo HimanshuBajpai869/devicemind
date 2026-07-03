@@ -234,9 +234,9 @@ pip install -r requirements.txt
 ~~~
 ollama serve
 ~~~
-- Pull the LLM Model - The solution right now uses tinyllama, but you can change model as needed.
+- Pull the LLM Model - The solution right now uses qwen3:8b, but you can change model as needed.Use tinyllama for quick try out
 ~~~
-ollama pull tinyllama
+ollama pull qwen3:8b
 ~~~
 
 ## Start Chat Assistant

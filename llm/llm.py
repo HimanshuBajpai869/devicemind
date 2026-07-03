@@ -3,7 +3,7 @@ from urllib import response
 from ollama import chat
 import json
 
-MODEL = "tinyllama"
+MODEL = "qwen3:8b"  # "tinyllama"
 
 SYSTEM_PROMPT = """
 You are a tool planner for DeviceMind.
