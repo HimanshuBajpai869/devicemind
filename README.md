@@ -247,46 +247,7 @@ python3 -m assistant.chat_assistant_v2
 
 # Example Interactions
 
-## Battery Query
-
-~~~
-You: How is my battery?
-
-Response:
-
-🔋 Battery: 62% - Discharging
-🌡 Temperature: 33.0°C
-
-🧠 Insights:
-- Everything looks normal.
-~~~
-
-## Storage Query
-
-~~~
-You: How is storage?
-
-Response:
-
-💾 Storage: 79.7/215.0 GB used
-
-🧠 Insights:
-- Everything looks normal.
-~~~
-
-## Full Device Query
-
-~~~
-You: How is my device doing?
-
-Response:
-
-📱 Device: motorola edge 50 neo (16)
-
-🔋 Battery: 65%
-🌡 Temperature: 35°C
-💾 Storage: 79.7/215.0 GB used
-~~~
+<img width="837" height="391" alt="Screenshot 2026-07-03 at 10 53 03 AM" src="https://github.com/user-attachments/assets/9e8a1db6-593e-4963-a7bc-0fadc834868d" />
 
 
 # 🚀 Roadmap
