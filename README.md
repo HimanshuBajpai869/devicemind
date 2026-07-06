@@ -247,25 +247,71 @@ python3 -m assistant.chat_assistant_v2
 
 # Example Interactions
 
-<img width="837" height="391" alt="Screenshot 2026-07-03 at 10 53 03 AM" src="https://github.com/user-attachments/assets/9e8a1db6-593e-4963-a7bc-0fadc834868d" />
+~~~
+ou: How is overall health of the device?
+🧠 Planning...
+========== RAW LLM OUTPUT ==========
+{"tool":"device_status"}
+====================================
+{'tool': 'device_status'}
+🔧 Calling device_status
+Processing request of type CallToolRequest
+Processing request of type ListToolsRequest
+🤖 Reasoning...
 
+Assistant:
+
+The device's overall health appears to be in good condition.  
+
+- **Battery**: At 100% charge and currently charging, with "Good" health, a temperature of 33°C, and a voltage of 4.473V. No signs of degradation or issues.  
+- **Storage**: 79 GB used out of 215 GB total, leaving 135 GB available. Sufficient free space ensures optimal performance.  
+- **System**: Running Android 16 with a security patch up to May 2026, indicating up-to-date software.  
+
+No critical warnings or anomalies detected in the telemetry data.
+~~~
+
+~~~
+You: how is mobile battery health?
+🧠 Planning...
+========== RAW LLM OUTPUT ==========
+{"tool":"battery_status"}
+====================================
+{'tool': 'battery_status'}
+🔧 Calling battery_status
+Processing request of type CallToolRequest
+Processing request of type ListToolsRequest
+🤖 Reasoning...
+
+Assistant:
+
+The mobile battery is currently at 100% capacity and is in the process of charging. Its health status is "Good," indicating no significant degradation. The temperature is 33.9°C, which is slightly elevated but within a range that typically doesn't harm the battery. The voltage reads 4.472V, which is normal for a lithium-ion battery during charging. No immediate concerns are indicated based on the provided data.
+~~~
+
+~~~
+You: How is mobile storage health?
+🧠 Planning...
+========== RAW LLM OUTPUT ==========
+{"tool":"storage_status"}
+====================================
+{'tool': 'storage_status'}
+🔧 Calling storage_status
+Processing request of type CallToolRequest
+Processing request of type ListToolsRequest
+🤖 Reasoning...
+
+Assistant:
+
+The mobile storage has **78.97 GB used** out of a total **214.98 GB**, leaving **135.50 GB available**. This indicates a healthy balance, as over half the storage remains free, which is typically sufficient for most users. However, storage health also depends on factors like app usage, system updates, and whether critical data (e.g., apps, media) are stored on internal storage versus expandable storage. If you're experiencing performance issues or low space warnings, further analysis of specific usage patterns would be helpful.
+~~~
 
 # 🚀 Roadmap
 
-## Phase 2 — MCP Tool Expansion
-
-Split into:
-
-- battery_status()
-- storage_status()
-- device_info()
-
-## Phase 3 — Memory Layer
+## Phase 2 — Memory Layer
 - Battery trends
 - Storage growth tracking
 - Device history over time
 
-## Phase 4 — Proactive Assistant
+## Phase 3 — Proactive Assistant
 - “Storage will fill in 10 days”
 - “Battery degrading faster than usual”
 - “Device overheating detected”
