@@ -11,5 +11,17 @@ def device_status():
     return collector.get_status()
 
 
+@mcp.tool()
+def battery_status():
+    """Return device battery status health snapshot"""
+    return collector.get_battery()
+
+
+@mcp.tool()
+def storage_status():
+    """Return device storage status health snapshot"""
+    return collector.get_storage()
+
+
 if __name__ == "__main__":
     mcp.run()
