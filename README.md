@@ -248,7 +248,7 @@ python3 -m assistant.chat_assistant_v2
 # Example Interactions
 
 ~~~
-ou: How is overall health of the device?
+You: How is overall health of the device?
 🧠 Planning...
 ========== RAW LLM OUTPUT ==========
 {"tool":"device_status"}
